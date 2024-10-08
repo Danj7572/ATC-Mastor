@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<Style>
+    body {
+        background-color: #BEBEBE;
+        font-family: Poppins, sans-serif;
+    }
+</Style>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Webeye</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+
+
+<ul>
+    <li><a href="home.html"> Home </a></li>
+</ul>
+
+<head>
+    <style>
+        .myDiv {
+            background-color: #DA291C;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<div class="myDiv">
+    <h2>Step 1</h2>
+</div>
+<b>
+    <P> TRACK OF INTEREST (DIRECTION) </P>
+    <P> INBOUND/OUTBOUND </P>
+    <P> CALLSIGN </P>
+    <P> ALTITUDE/FLIGHT LEVEL </P>
+</b>
+
+<div class="myDiv">
+    <h2>Step 2</h2>
+</div>
+<b>
+    <P> NATREP this is the master controller, I have a track of interest in the system for you (provide details) </P>
+
+    <P> NATREP confirms on radar - Yeah I can see if on your radar </P>
+
+    <P> I will bring Quick Reaction Alert to readiness, standby. </P>
+</b>
+<div class="myDiv">
+    <h2>Step 3</h2>
+</div>
+<b>
+    <P>Coningsby Operations and QRA this is the blackdog master controller, aknowledge.</h2>
+    <P>QRA</P>
+    <p>Q ON, (Number) Quick Reaction Alert(s). SCRAMBLE, SCRAMBLE, SCRAMBLE ACKNOWLEGE</p>
+    <P>QRA</P>
+</b>
+<div class="myDiv">
+    <h2>Step 4</h2>
+
+    <h3>QRA ALARM</h3>
+    <audio controls>
+        <source src="Alarm Bell 1 Hour.mp3" />
+    </audio>
+</div>
+
+    </body>
+
+</html>

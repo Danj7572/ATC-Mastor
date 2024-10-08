@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>London Control West Agreements</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGFF Cardiff </h2>
+<!--------------------------------------------------------------------------------------------->
+
+<table>
+
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>LECKI/BCN</td>
+        <td>FL120 Level NUCHU</td>
+        <td>L607/L18</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>LECKI/BCN</td>
+        <td>FL250 Level ELSOF</td>
+        <td>L607/L18</td>
+        <td>EGTL_SW_CTR</td>
+    </tr>
+    <tr>
+        <td>LECKI/BCN</td>
+        <td>Climbing FL150</td>
+        <td>N864/P16</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>LECKI/BCN</td>
+        <td>Climbing FL150</td>
+        <td>L9</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>EXMOR</td>
+        <td>Climbing FL160</td>
+        <td>N864</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGGD Bristol </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>YORQI/HAWFA</td>
+        <td>Climbing to FL130</td>
+        <td>L607/L18</td>
+        <td>EGTL_SW_CTR</td>
+    </tr>
+    <tr>
+        <td>YORQI/HAWFA</td>
+        <td>FL180 Level/Abeam KENET</td>
+        <td>Q63</td>
+        <td>EGTL_NW_CTR</td>
+    </tr>
+    <tr>
+        <td>EXMOR</td>
+        <td>Climbing to FL150</td>
+        <td>MANIG</td>
+        <td>LFFR_CTR</td>
+    </tr>
+    <tr>
+        <td>EXMOR</td>
+        <td>Climbing to FL160</td>
+        <td>AMPOP/TALIG/SALCO</td>
+        <td>LFFR_CTR</td>
+    </tr>
+    <tr>
+        <td>BCN</td>
+        <td>Climbing to FL160</td>
+        <td>VATRY</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGTE Exeter </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>None</td>
+        <td>Climbing to FL160</td>
+        <td></td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGJJ Jersey Group </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>LELNA</td>
+        <td>FL200 Level LELNA</td>
+        <td>North East</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>SKERY</td>
+        <td>FL200 Level SKERY</td>
+        <td>North West</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>None</td>
+        <td>FL190</td>
+        <td>South</td>
+        <td>LFFR_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGFF Cardiff TMA </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>STAR</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>SKERY/BIGNO</td>
+        <td>FL210 Level SKERY/BIGNO</td>
+        <td>EGJJ/EGJB/EGJA</td>
+        <td>EGJJ_CTR</td>
+    </tr>
+    <tr>
+        <td>None</td>
+        <td>FL160</td>
+        <td>EGTE</td>
+        <td>EGFF_APP</td>
+    </tr>
+    <tr>
+        <td>NOZHU/BHD</td>
+        <td>FL170</td>
+        <td>EGFF/EGGD Deps climb to FL160</td>
+        <td>EGFF_APP/EGGD_APP</td>
+    </tr>
+    <tr>
+        <td>WEBVE</td>
+        <td>FL160 Level WEVBE</td>
+        <td>L15 Deps climb to FL150</td>
+        <td>EGFF_APP/EGGD_APP</td>
+    </tr>
+    <tr>
+        <td>ICTAM</td>
+        <td>FL120</td>
+        <td></td>
+        <td>EGFF_APP</td>
+    </tr>
+    <tr>
+        <td>ICTAM</td>
+        <td>FL100</td>
+        <td>Deps climb to FL090</td>
+        <td>EGGD_APP</td>
+    </tr>
+</table>
+</html>

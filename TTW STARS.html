@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>London Control West STARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGFF Cardiff </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">WEVBE 1C</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>WEVBE FL160</p>
+        <p>UBCAM FL150</p>
+        <p>CDF FL070</p>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">ELREW 1C</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ELREW FL160</p>
+        <p>CDF FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">FIFAH 1C</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>FIFAH FL170</p>
+        <p>CDF FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ICTAM 1C</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ICTAM FL260</p>
+        <p>CDF FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">DAWLY 1C</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>CDF FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TOJAQ 1C</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>CDF FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BAJJA 1C</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>FANFE FL180</p>
+        <p>CDF FL070</p>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGGD Bristol </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">WEVBE 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>WEVBE FL160</p>
+        <p>UBCAM FL150</p>
+        <p>BRI FL070</p>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">ELREW 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ELREW FL160</p>
+        <p>BRI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">FIFAH 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>FIFAH FL170</p>
+        <p>BRI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ICTAM 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ICTAM FL220</p>
+        <p>BRI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">DAWLY 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>BRI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TOJAQ 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>BRI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BAJJA 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>FANFE FL180</p>
+        <p>BRI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ADVED 1A (RWY 09)</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ADVED</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BAXUN 1A (RWY 27)</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>BAXUN</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGJJ Jersey </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">ORTAC 1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JW RWY 08</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TUNIT 1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JW RWY 08</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SKERY 1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JW RWY 08</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BIGNO 1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JW RWY 08</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LELNA 1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LELNA FL200</p>
+        <p>JW RWY 08</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BEVAV 1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JW RWY 08</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LERAK 1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JW RWY 08</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ORTAC 1J</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TUNIT 1J</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SKERY 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>As directed</p>
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SKERY 1J</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BIGNO 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>As directed</p>
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LELNA 1J</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LELNA FL200</p>
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BEVAV 1J</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LERAK 1J</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">MINQI 1J</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>JSY RWY 26</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGJB Guernsey </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">ORTAC 1V</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GUR RWY 09</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LELNA 1V</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LELNA FL200</p>
+        <p>GUR RWY 09</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ORTAC 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GUR RWY 27</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LELNA 1B</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LELNA FL200</p>
+        <p>GUR RWY 27</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ALD 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GUR RWY 27/09</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SKERY 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GUR RWY 27/09</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BIGNO 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GUR RWY 27/09</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">DIN 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GUR RWY 27/09</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BEVAV 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GUR RWY 27/09</p>
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

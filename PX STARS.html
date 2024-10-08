@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>London Control West STARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGPH Edinburgh </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">PTH 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>STIRA FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">INPIP 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>INPIP FL260</p>
+        <p>INREV FL200</p>
+        <p>TARTN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">AGPED 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>AGPED FL260</p>
+        <p>TARTN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">GIRVA 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GIRVA FL120</p>
+        <p>TARTN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TUNSO 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>TUNSO FL170</p>
+        <p>TARTN FL070</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGPF Glasgow Prestwick </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">AGPED 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>AGPED FL260</p>
+        <p>LANAK FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">PTH 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>STIRA FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">APPLE 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ASLIB FL260</p>
+        <p>ODIGI FL200</p>
+        <p>LANAK FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">RIBEL 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ASLIB FL260</p>
+        <p>ODIGI FL200</p>
+        <p>LANAK FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BRUCE 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>FYNER FL090</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ERSON 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>FOYNE FL090</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BLACA 1G</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GIRVA FL150</p>
+        <p>LANAK FL070</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGPK Glasgow Prestwick </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">BLACA 1P</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GIRVA FL070</p>
+        <p>TRN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">APPLE 2P</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ASLIB FL260</p>
+        <p>ENIPI FL200</p>
+        <p>TOXTA FL070</p>
+        <p>TRN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TRN 2Q (Transition)</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>TRN FL070</p>
+        <p>TYSOR 6000</p>
+        <p>INBLOB +4000</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TRN 2S (Transition)</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>TRN FL070</p>
+        <p>GOSOB 6000</p>
+        <p>UTITI +4000</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SUMIN 2S (Transition)</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>SUMIN FL070</p>
+        <p>UTITI +4000</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TRN 2R (Transition)</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>TRN FL070</p>
+        <p>ECCHO +6000</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SUMIN 2R (Transition)</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>SUMIN FL070</p>
+        <p>PKE07 6000</p>
+        <p>SKARV +4500</p>
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

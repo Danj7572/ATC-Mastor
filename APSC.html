@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel = "stylesheet" href="mystyle.css">
+	<title> BULK ATC MASTOR</title> 
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Home</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+    <ul>
+        <li><a href="Home.html"> Home </a></li>
+    </ul>
+<!--------------------------------------------------------------------------------------------->
+<h2>Transition Level TL</h2>
+<!--------------------------------------------------------------------------------------------->
+    <table>
+        <tr>
+            <th>QNH</th>
+            <th>6000ft Level</th>
+            <th>5000ft Level</th>
+            <th>3000ft Level</th>
+        </tr>
+        <tr>
+            <td>977-994</td>
+            <td>FL080</td>
+            <td>FL070</td>
+            <td>FL050</td>
+        </tr>
+        <tr>
+            <td>995-1013</td>
+            <td>FL075</td>
+            <td>FL065</td>
+            <td>FL045</td>
+        </tr>
+        <tr>
+            <td>1014-1031</td>
+            <td>FL070</td>
+            <td>FL060</td>
+            <td>FL040</td>
+        </tr>
+        <tr>
+            <td>1032-1049</td>
+            <td>FL065</td>
+            <td>FL055</td>
+            <td>FL035</td>
+        </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>Minimum Stack Level MSL</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+            <tr>
+                <th>QNH</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>977 or less</td>
+                <td>FL090</td>
+            </tr>
+            <tr>
+                <td>977-1012</td>
+                <td>FL080</td>
+            </tr>
+            <tr>
+                <td>1012 or greater</td>
+                <td>FL070</td>
+            </tr>
+        </table>
+</body>
+
+</html>

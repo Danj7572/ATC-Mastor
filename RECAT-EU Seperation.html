@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> STARS</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>CAA Seperation</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+    <ul>
+        <li><a href="Home.html"> Home </a></li>
+    </ul>
+
+    <!--------------------------------------------------------------------------------------------->
+    <h3>RECAT EU Departure Seperation</h3>
+    <!--------------------------------------------------------------------------------------------->
+    <table>
+        <tr>
+            <th>Following/Leading</th>
+            <th>J Super</th>
+            <th>UH Upper heavy</th>
+            <th>LH Lower Heavy</th>
+            <th>UM Upper Medium</th>
+            <th>LM Lower Medium</th>
+            <th>L Light</th>
+        </tr>
+        <tr>
+            <td>J Super</td>
+            <td>*</td>
+            <td>1.6</td>
+            <td>2</td>
+            <td>2.3</td>
+            <td>2.6</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>UH Upper Heavy</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>1.6</td>
+            <td>2</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>LH Lower Heavy</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>1.3</td>
+            <td>1.6</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>UM Upper Medium</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>LM Lower Medium</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>1.6</td>
+        </tr>
+        <tr>
+            <td>L Light</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>1.3</td>
+        </tr>
+    </table>
+
+    <!--------------------------------------------------------------------------------------------->
+    <h3>RECAT EU Arrival Seperation</h3>
+    <!--------------------------------------------------------------------------------------------->
+    <table>
+        <tr>
+            <th>Following/Leading</th>
+            <th>J Super</th>
+            <th>UH Upper heavy</th>
+            <th>LH Lower Heavy</th>
+            <th>UM Upper Medium</th>
+            <th>LM Lower Medium</th>
+            <th>L Light</th>
+        </tr>
+        <tr>
+            <td>J Super</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>6</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>UH Upper Heavy</td>
+            <td>*</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>LH Lower Heavy</td>
+            <td>*</td>
+            <td>*</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>UM Upper Medium</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>LM Lower Medium</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>L Light</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

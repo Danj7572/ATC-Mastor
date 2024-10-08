@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>London Control South Agreements</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGLL London Heathrow </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>BPK</td>
+        <td>Climbing FL150</td>
+        <td>PAVVO/TEDSA/MATCH DCT DIGSU</td>
+        <td>EGTL_NE_CTR</td>
+        </tr>
+    <tr>
+        <td>BPK</td>
+        <td>Climbing FL230</td>
+        <td>REDFA/SOMVA</td>
+        <td>EGTL_E_CTR</td>
+    </tr>
+    <tr>
+        <td>CPT</td>
+        <td>FL150</td>
+        <td></td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>GOGSI/GASGU</td>
+        <td>Climbing FL150</td>
+        <td>SAM</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>DET</td>
+        <td>Climbing FL180</td>
+        <td>UL9/Q70</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>MODMI/MAXIT</td>
+        <td>FL170</td>
+        <td>SITET/XIDIL/XAMAB</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>UMLAT/ULTIB</td>
+        <td>FL190 Level TIMPO/PIPIN</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGKK London Gatwick </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>DVR/ODVIK/MIMFO</td>
+        <td>Climbing FL180</td>
+        <td>UL9/L10/DVR M140</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>FRANE</td>
+        <td>Climbing FL130</td>
+        <td></td>
+        <td>EGTL_NE_CTR</td>
+    </tr>
+    <tr>
+        <td>FRANE</td>
+        <td>Climbing FL170</td>
+        <td></td>
+        <td>EGTL_E_CTR</td>
+    </tr>
+    <tr>
+        <td>KENET/IMVUR/NOVMA</td>
+        <td>FL150</td>
+        <td></td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>LAM</td>
+        <td>FL130 Level TC North/South Boundary</td>
+        <td>UL70/M145/M144</td>
+        <td>EGTL_NE_CTR</td>
+    </tr>
+    <tr>
+        <td>LAM</td>
+        <td>Climbing FL190</td>
+        <td>SAM/L620</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>SAM/IMVUR/NOVMA</td>
+        <td>Climbing FL150</td>
+        <td>SAM/L620</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>SFD/BOGNA</td>
+        <td>FL170</td>
+        <td>SITET/XIDIL/XAMAB</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGLC London City</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>BPK</td>
+        <td>Climbing FL190 Level TIMPO/PIPIN</td>
+        <td></td>
+        <td>EGTL_S_CTR</td>
+    </tr>
+    <tr>
+        <td>EKNIV</td>
+        <td>MSL Level SODVU</td>
+        <td>LYD</td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+    <tr>
+        <td>CLN</td>
+        <td>Climbing 4000ft</td>
+        <td></td>
+        <td>EGTL_E_CTR</td>
+    </tr>
+    <tr>
+        <td>DVR</td>
+        <td>Climbing 5000ft</td>
+        <td></td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+    <tr>
+        <td>EKNIV/LYD</td>
+        <td>MSL Level SODVU</td>
+        <td>SAM</td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+    <tr>
+        <td>SAXBI</td>
+        <td>Climbing to FL260</td>
+        <td></td>
+        <td>EGTL_NW_CTR</td>
+    </tr>
+    <tr>
+        <td>SOQQA</td>
+        <td>MSL Level SODVU</td>
+        <td>LYD</td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGSS London Stansted/EGSC Cambridge</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>CLN</td>
+        <td>Climbing FL110</td>
+        <td>REDFA/SOMVA</td>
+        <td>EGTL_E_CTR</td>
+    </tr>
+    <tr>
+        <td>CLN</td>
+        <td>Climbing FL210</td>
+        <td>REDFA/SOMVA</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>DET</td>
+        <td>MSL Level TC North/South Boundary</td>
+        <td>KONAN</td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+    <tr>
+        <td>DET</td>
+        <td>Climbing FL180</td>
+        <td>KONAN</td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+    <tr>
+        <td>LYD</td>
+        <td>FL190 North/South Boundary</td>
+        <td>XIDIL</td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+    <tr>
+        <td>NUGBO/CPT</td>
+        <td>Climbing FL120</td>
+        <td></td>
+        <td>EGTL_NW_CTR</td>
+    </tr>
+    <tr>
+        <td>NUGBO/CPT</td>
+        <td>Climbing FL160 Level 5NM North of the North/South Boundary</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGGW London Luton</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>DET</td>
+        <td>MSL Level TC North/South Boundary</td>
+        <td>RINTI</td>
+        <td>EGTL_NE_CTR</td>
+    </tr>
+    <tr>
+        <td>MATCH</td>
+        <td>Climbing FL150</td>
+        <td>PAVVO/UM84/M84/M85</td>
+        <td>EGTL_NE_CTR</td>
+    </tr>
+    <tr>
+        <td>MATCH</td>
+        <td>Climbing FL230</td>
+        <td>REDFA/SOMVA</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>MATCH/DVR/ITVIP</td>
+        <td>Climbing FL150</td>
+        <td>M85</td>
+        <td>EGTL_NE_CTR</td>
+    </tr>
+    <tr>
+        <td>OLNEY</td>
+        <td>Climbing FL190 Level TIMPO/PIPIN</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>RODNI</td>
+        <td>Climbing FL150</td>
+        <td>SAM</td>
+        <td>EGTL_SW_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGKB Biggin Hill</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>CPT</td>
+        <td>Climbing FL260</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>SOQQA</td>
+        <td>Climbing 4000ft</td>
+        <td>LYD</td>
+        <td>EGTL_NE_CTR</td>
+    </tr>
+    <tr>
+        <td>SAXBI</td>
+        <td>Climbing FL260</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGMC Southend</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>BPK</td>
+        <td>Climbing FL140</td>
+        <td></td>
+        <td>EGTL_NW_CTR</td>
+    </tr>
+    <tr>
+        <td>CPT</td>
+        <td>Climbing FL210</td>
+        <td></td>
+        <td>EGTL_NW_CTR</td>
+    </tr>
+    <tr>
+        <td>LYD</td>
+        <td>Climbing 5000ft</td>
+        <td></td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGHI Southampton/EGHH Bournemouth/EGLF Farnborough</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>NO SID</td>
+        <td>FL100 Level N/S Boundary</td>
+        <td></td>
+        <td>EGTL_NW_CTR</td>
+    </tr>
+    <tr>
+        <td>NO SID</td>
+        <td>At or climbing to FL210 or if filed FL200 at or climbing to FL200</td>
+        <td></td>
+        <td>EGTL_NW_CTR</td>
+    </tr>
+    <tr>
+        <td>NO SID</td>
+        <td>FL130</td>
+        <td>CPT</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>NO SID</td>
+        <td>FL170 Level OCK</td>
+        <td>OCK</td>
+        <td>EGTL_SE_CTR</td>
+    </tr>
+    <tr>
+        <td>NO SID</td>
+        <td>FL170</td>
+        <td>GWC</td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>NO SID</td>
+        <td>FL210 Level DIKVU</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>NO SID</td>
+        <td>FL210 Level DIKVU</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGBB Birmingham</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>UNGAP</td>
+        <td>FL210 Level SIVDA</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>ADMEX</td>
+        <td>FL190 Level COWLY</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>ADMEX</td>
+        <td>FL190 Level 10NM Before CPT</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGNX East Midlands</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>UNGAP</td>
+        <td>FL210 Level SIVDA</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>ADMEX</td>
+        <td>FL220 Level SILVA 15NM Before CPT</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGNX East Midlands and EGBB Birmingham</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>STAR</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>HEMEL</td>
+        <td>FL100 Level VELAG</td>
+        <td></td>
+        <td>EGNX_APP</td>
+    </tr>
+    <tr>
+        <td>HEMEL</td>
+        <td>FL090 Level HON</td>
+        <td></td>
+        <td>EGBB_APP</td>
+    </tr>
+</table>
+
+    </html>

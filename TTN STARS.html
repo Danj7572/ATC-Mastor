@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1>BULK ATC MASTOR Version XIV MMXXIV </h1>
+    <h2>London Control North STARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGCC Manchester </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">LAKEY 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LAKEY FL200</p>
+        <p>ROSUN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SETEL 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ROSUN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">TILNI 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>TILNI FL250</p>
+        <p>ROSUN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LIBSO 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LIBSO FL290</p>
+        <p>GOLES FL170</p>
+        <p>ROSUN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">OTBED 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>OTBED FL290</p>
+        <p>GOLES FL170</p>
+        <p>ROSUN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">MAKUX 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>MAKUX FL270</p>
+        <p>IBRAR FL170</p>
+        <p>MIRSI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">MALUD 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>MALUD FL170</p>
+        <p>MIRSI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">AXCIS 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>AXCIS FL200</p>
+        <p>MIRSI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">PENIL 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>PENIL FL170</p>
+        <p>MIRSI FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ELVOS 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ELVOS FL200</p>
+        <p>DAYNE FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LESTA 1M</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LESTA FL200</p>
+        <p>DAYNE FL080</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGGP Liverpool </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">GASGO 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>GASKO FL170</p>
+        <p>TIPOD FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LAKEY 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LAKEY FL200</p>
+        <p>TIPOD FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LISBO 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LISBO FL290</p>
+        <p>UPTON FL170</p>
+        <p>TIPOD FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">POL 1D</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>TIPOD FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">VEGUS 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>VEGUS FL290</p>
+        <p>UPTON FL170</p>
+        <p>TIPOD FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BOFUM 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>BOFUM FL270</p>
+        <p>TIPOD FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">PENIL 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>TIPOD FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ELVOS 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ELVOS FL200</p>
+        <p>NANTI FL100</p>
+        <p>KEGUN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LESTA 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LESTA FL200</p>
+        <p>NANTI FL100</p>
+        <p>KEGUN FL070</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">PEPEZE 1L</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>PEPEZE FL180</p>
+        <p>KEGUN FL070</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGNT Newcastle </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">POL 1N</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>IRKOR FL160</p>
+        <p>XODRU FL120</p>
+        <p>ETSES FL090</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">RIMTO 1N</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>IRKOR FL160</p>
+        <p>XODRU FL120</p>
+        <p>ETSES FL090</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">ETSES 1J/1K</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ETSES FL090</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGNX East Midlands </h2>
+<!--------------------------------------------------------------------------------------------->
+<div class="dropdown">
+    <button class="dropbtn">AMPIT 2E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>NOKIN FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">DOLOP 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>DOLOP FL270</p>
+        <p>NOKIN FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">MAKUX 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>MAKUX FL270</p>
+        <p>NOKIN FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">MALUD 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>MALUD FL270</p>
+        <p>NOKIN FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">WAL 2E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">BEGAM 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>MCT FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">CROFT 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>MCT FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">VEGUS 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>VEGUS FL290</p>
+        <p>MCT FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">LIBSO 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>LIBSO FL290</p>
+        <p>MCT FL200</p>
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">POL 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>ROKUP FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">DTY 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>DTY FL080</p>
+        <p>PIGOT FL080</p>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">HEMEL 1E</button>
+    <div class="dropdown-content" style="left:0;">
+        <p>HEMEL FL220</p>
+        <p>PIGOT FL080</p>
+    </div>
+</div>
+
+    </div>
+
+    </body>
+
+</html>

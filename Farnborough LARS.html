@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Farnborough LARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+
+<img src="EGLF LARS Map.png" alt="EGLF LARS Map" width="700" height="500">
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGLF Farborough LARS </h2>
+<!--------------------------------------------------------------------------------------------->
+
+<li><a href="http://www.flysynergy.com/wp-content/uploads/2014/01/Farnborough-LARS-Guide.pdf" target="_blank"> Farborough LARS official guide </a></li>
+
+<table>
+    <tr>
+        <th>Service</th>
+        <th>Squawk</th>
+    </tr>
+    <tr>
+        <td>LARS North VFR Conspicuity</td>
+        <td><b>5037</b></td>
+    </tr>
+    <tr>
+        <td>LARS East VFR Conspicuity</td>
+        <td><b>1747</b></td>
+    </tr>
+    <tr>
+        <td>LARS West VFR Conspicuity</td>
+        <td><b>0457</b></td>
+    </tr>
+    <tr>
+        <td>LARS North</td>
+        <td>5020-5036</td>
+    </tr>
+    <tr>
+        <td>LARS East</td>
+        <td>1730-1746</td>
+    </tr>
+    <tr>
+        <td>LARS West</td>
+        <td>0430-0456</td>
+    </tr>
+</table>

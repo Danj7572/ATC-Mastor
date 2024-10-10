@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>London Control South Agreements</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2>EHAA Amsterdam </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>REDFA/SOMVA</td>
+        <td>MAX FL275</td>
+        <td>London Group (except EGLC/MC/SC/SS/TO) to EHAM via REDFA not above FL275</td>
+        <td>EHAA_CTR</td>
+        </tr>
+    <tr>
+        <td>REDFA/SOMVA</td>
+        <td>FL230</td>
+        <td>FL230 (S12-EHAA S04) ARR: Amsterdam FIR inbounds (except EHGG, EHLW, EHHO, EHDL and EHTE)</td>
+        <td>EHAA_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>LFFF Paris </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>XIDIL</td>
+        <td>MAX FL260</td>
+        <td>Jet Traffic ARR: LFPG/PB/PT/PC MAX FL260 S18 to Paris (FL250/240 may be used during periods of heavy traffic)
+            Non Jet Traffic ARR: LFPG/PB/PT/PC MAX FL220 S18 to Paris</td>
+        <td>LFFF_CTR</td>
+    </tr>
+    <tr>
+        <td>XIDIL</td>
+        <td>MAX FL190</td>
+        <td>ARR: LFOB/LFOP MAX FL190 at XIDIL</td>
+        <td>LFFF_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>LFFF Paris </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>DET/LAVRI</td>
+        <td>FL290 Level DET/LAVRI</td>
+        <td>ARR: Brussels TMA, EBLG</td>
+        <td>EBBU_CTR</td>
+    </tr>
+    <tr>
+        <td>VABIK/KONAN</td>
+        <td>FL230</td>
+        <td>ARR: Lille Group, EBKT/EBOS</td>
+        <td>EBBU_CTR</td>
+    </tr>
+    <tr>
+        <td>VABIK/KONAN</td>
+        <td>MAX FL110</td>
+        <td>ARR: EBOS/EBKT</td>
+        <td>EBBU_CTR</td>
+    </tr>
+</table>

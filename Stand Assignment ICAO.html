@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<link rel = "stylesheet" href="mystyle.css">
+	<title> BULK ATC MASTOR</title> 
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Home</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+    <ul>
+        <li><a href="home.html"> Home </a></li>
+    </ul>
+
+
+<!--------------------------------------------------------------------------------------------->
+<h2>EIDW Dublin</h2>
+
+<button onClick="window.location.reload();">Refresh Stands</button>
+<!--------------------------------------------------------------------------------------------->
+
+<table>
+    <tr>
+        <th>Terminal 2 (Pier 4)</th>
+        <th>Terminal 1 (Pier 1)</th>
+        <th>Terminal 1 (Pier 2)</th>
+        <th>Terminal 1 (Pier 3)</th>
+        <th>Terminal 1 (Remote)</th>
+        <th>West Apron</th>
+        <th>Cargo</th>
+    </tr>
+    <tr>
+        <td>
+            <p id="T2"></p>
+
+            <script>
+            document.getElementById("T2").innerHTML =
+            Math.floor(Math.random()* (400-409))+400;
+            </script>
+        </td>
+        <td>
+            <p id="T1 P1"></p>
+            <script>
+                document.getElementById("T1 P1").innerHTML =
+                Math.floor(Math.random()* (145-127))+127;
+            </script>
+        </td>
+        <td>
+            <p id="T1 P2"></p>
+            <script>
+                document.getElementById("T1 P2").innerHTML =
+                Math.floor(Math.random()* (207-200))+200;
+            </script>
+        </td>
+        <td>
+            <p id="T1 P3"></p>
+            <script>
+                document.getElementById("T1 P3").innerHTML =
+                Math.floor(Math.random()* (318-311))+311;
+            </script>
+        </td>
+        <td>
+        <p id="T1 R"></p>
+        <script>
+            document.getElementById("T1 R").innerHTML =
+            Math.floor(Math.random()* (223-221))+221;
+        </script>
+        </td>
+        <td>
+         <p id="WA"></p>
+         <script>
+            document.getElementById("WA").innerHTML =
+            Math.floor(Math.random()* (621-614))+614;
+            </script>
+        </td>
+        <td>
+            <p id="Cargo"></p>
+            <script>
+               document.getElementById("Cargo").innerHTML =
+               Math.floor(Math.random()* (418-411))+411;
+               </script>
+           </td>   
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                <li>EIN</li>
+                <li>UAL</li>
+                <li>AAL</li>
+                <li>BAW</li>
+                <li>IBE</li>
+            </td>
+            <td>
+                <li>RYR</li>
+            </td>
+            <td>
+            <li>DLH</li>
+            <li>SAS</li>
+            <li>SAS</li>
+            <li>WJA</li>
+            <li>SWR</li>
+            <li>KLM</li>
+            <li>AUR</li>
+            <li>PGS</li>
+            <li>QTR</li>
+            <li>EWG</li>
+            </td>
+            
+            <td>
+            </td>
+            
+            <td>
+            <li>EAI</li>
+            <li>LOG</li>
+            </td>
+
+            <td>
+            </td>
+
+            <td>
+                <li>BCS</li> 
+            </td>
+
+        </tr>               
+</table>
+
+</body>
+</html>
+

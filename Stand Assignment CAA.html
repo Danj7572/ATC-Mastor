@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<link rel = "stylesheet" href="mystyle.css">
+	<title> BULK ATC MASTOR</title> 
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Home</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+    <ul>
+        <li><a href="home.html"> Home </a></li>
+    </ul>
+
+
+<!--------------------------------------------------------------------------------------------->
+<h2>EGLL London Heathrow</h2>
+<button onClick="window.location.reload();">Refresh Stands</button>
+<!--------------------------------------------------------------------------------------------->
+
+<table>
+    <tr>
+        <th>Terminal 5A</th>
+        <th>Terminal 5B</th>
+        <th>Terminal 5C</th>
+        <th>Terminal 3</th>
+        <th>Terminal 2A</th>
+        <th>Terminal 2B</th>
+        <th>Terminal 4</th>
+        <th>Cargo</th>
+    </tr>
+    <tr>
+        <td>
+            <p id="T5A"></p>
+
+            <script>
+            document.getElementById("T5A").innerHTML =
+            Math.floor(Math.random()* (523-501))+501;
+            </script>
+        </td>
+        <td>
+            <p id="T5B"></p>
+            <script>
+                document.getElementById("T5B").innerHTML =
+                Math.floor(Math.random()* (548-531))+531;
+            </script>
+        </td>
+        <td>
+            <p id="T5C"></p>
+            <script>
+                document.getElementById("T5C").innerHTML =
+                Math.floor(Math.random()* (590-558))+558;
+            </script>
+        </td>
+        <td>
+        <p id="T3"></p>
+        <script>
+            document.getElementById("T3").innerHTML =
+            Math.floor(Math.random()* (357-301))+301;
+        </script>
+        </td>
+        <td>
+         <p id="T2A"></p>
+         <script>
+            document.getElementById("T2A").innerHTML =
+            Math.floor(Math.random()* (221-201))+201;
+            </script>
+        </td>
+        <td>
+            <p id="T2B"></p>
+            <script>
+               document.getElementById("T2B").innerHTML =
+               Math.floor(Math.random()* (258-212))+212;
+               </script>
+           </td>
+           <td>
+            <p id="T4"></p>
+            <script>
+               document.getElementById("T4").innerHTML =
+               Math.floor(Math.random()* (452-401))+401;
+               </script>
+           </td>
+           <td>
+            <p id="Cargo"></p>
+            <script>
+               document.getElementById("Cargo").innerHTML =
+               Math.floor(Math.random()* (616-601))+601;
+               </script>
+           </td>
+        </tr>
+        <tr>
+            <tr>
+                <td>
+                    <li>BAW</li>
+                </td>
+                <td>
+                <li>BAW</li>
+                <li>IBE</li>
+                <li>AAL</li>
+                </td>
+                <td>
+                    <li>BAW</li>
+                    <li>VIR</li>
+                    <li>EKK</li>
+                    <li>DAL</li>
+                </td>
+                <td>
+                    <li>VIR</li>
+                    <li>AAL</li>
+                    <li>FIN</li>
+                    <li>DAL</li>
+                    <li>EKK</li>
+                </td>
+                <td>
+                <li>EIN</li>
+                <li>DLH</li>
+                <li>SWR</li>
+                <li>EWG</li>
+                <li>BEL</li>
+                </td>
+
+                <td>
+                </td>
+
+                <td>
+                    <li>BAW</li>
+                    <li>AFR</li>
+                    <li>KLM</li>
+                    <li>SVA</li>
+                    <li>VLG</li>
+                    <li>QTR</li>
+                </td>
+                <td>
+                    <li>DHL</li>
+                    <li>CLX</li>
+                </td>
+            </tr>
+
+        </tr>
+</table>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGKK London Gatwick</h2>
+<button onClick="window.location.reload();">Refresh Stands</button>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>North Pier 4</th>
+        <th>North Pier 5</th>
+        <th>North Pier 6</th>
+        <th>South Pier 1</th>
+        <th>South Pier 2</th>
+        <th>South Pier 3</th>
+        <th>Parking</th>
+        <th>Cargo</th>
+    </tr>
+        <tr>
+            <td>
+            <p id="NP4"></p>
+
+            <script>
+            document.getElementById("NP4").innerHTML =
+            Math.floor(Math.random()* (54-46))+46;
+            </script>
+            </td>
+            <td>
+            <p id="NP5"></p>
+            <script>
+                document.getElementById("NP5").innerHTML =
+                Math.floor(Math.random()* (574-552))+552;
+            </script>
+        </td>
+        <td>
+            <p id="NP6"></p>
+            <script>
+                document.getElementById("NP6").innerHTML =
+                Math.floor(Math.random()* (113-101))+101;
+            </script>
+        </td>
+        <td>
+        <p id="SP1"></p>
+        <script>
+            document.getElementById("SP1").innerHTML =
+            Math.floor(Math.random()* (5-1))+1;
+        </script>
+        </td>
+        <td>
+         <p id="SP2"></p>
+         <script>
+            document.getElementById("SP2").innerHTML =
+            Math.floor(Math.random()* (13-10))+10;
+            </script>
+        </td>
+        <td>
+            <p id="SP3"></p>
+            <script>
+               document.getElementById("SP3").innerHTML =
+               Math.floor(Math.random()* (38-31))+31;
+               </script>
+           </td>
+           <td>
+            <p id="parking"></p>
+            <script>
+               document.getElementById("parking").innerHTML =
+               Math.floor(Math.random()* (145-130))+130;
+               </script>
+           </td>
+           <td>
+            <p id="cargo"></p>
+            <script>
+               document.getElementById("cargo").innerHTML =
+               Math.floor(Math.random()* (180-150))+150;
+               </script>
+           </td>
+           </tr>
+</tr>
+<tr>
+    <tr>
+        <td>
+        <li>EZY</li>
+        <li>TUI</li>
+        <li>DAL</li>
+        <li>EKK</li>
+        <li>DLH</li>
+        <li>ICE</li>
+        <li>JBU</li>
+        <li>QTR</li>
+        <li>SWR</li>
+        <li>WJA</li>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+        <li>EZY</li>
+        <li>BAW</li>
+        <li>IBE</li>
+        <li>EXS</li>
+        <li>NBT</li>
+        <li>NOZ</li>
+        <li>RYR</li>
+        <li>TAP</li>
+        <li>VLG</li>
+        <li>WZZ</li>
+        <li>AUR</li>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+        <li>DHL</li>
+        <li>CLX</li>
+    </td>
+
+</tr>
+</table>
+  
+<!--------------------------------------------------------------------------------------------->
+<h2>EGKK London Stansted</h2>
+<button onClick="window.location.reload();">Refresh Stands</button>
+<!--------------------------------------------------------------------------------------------->
+
+<table>
+    <tr>
+        <th>Apron Z</th>
+        <th></th>
+        <th>Apron A</th>
+        <th></th>
+        <th>Apron B</th>
+        <th></th>
+        <th>Apron C</th>
+        <th></th>
+        <th>Apron D</th>
+        <th></th>
+        <th>Apron E</th>
+        <th></th>
+    </tr>
+        <tr>
+            <td>
+            <P>204-204</P>
+            </td>
+            <td>
+                <P>213-214</P>
+            </td>
+        <td>
+            <p id="A1"></p>
+            <script>
+            document.getElementById("A1").innerHTML =
+            Math.floor(Math.random()* (9-1))+1;
+            </script>
+            </td>
+
+            <td>
+            <p id="A2"></p>
+            <script>
+                document.getElementById("A2").innerHTML =
+                Math.floor(Math.random()* (15-10))+10;
+            </script>
+        </td>
+        <td>
+            <p id="B1"></p>
+            <script>
+                document.getElementById("B1").innerHTML =
+                Math.floor(Math.random()* (25-20))+20;
+            </script>
+        </td>
+        <td>
+            <p id="B2"></p>
+            <script>
+                document.getElementById("B2").innerHTML =
+                Math.floor(Math.random()* (34-30))+30;
+            </script>
+        </td>
+        <td>
+            <p id="C1"></p>
+            <script>
+                document.getElementById("C1").innerHTML =
+                Math.floor(Math.random()* (45-40))+40;
+            </script>
+        </td>
+        <td>
+            <p id="C2"></p>
+            <script>
+                document.getElementById("C2").innerHTML =
+                Math.floor(Math.random()* (53-50))+50;
+            </script>
+        </td>
+        <td>
+            <p id="D1"></p>
+            <script>
+                document.getElementById("D1").innerHTML =
+                Math.floor(Math.random()* (65-61))+61;
+            </script>
+        </td>
+        <td>
+            <p id="D2"></p>
+            <script>
+                document.getElementById("D2").innerHTML =
+                Math.floor(Math.random()* (74-70))+70;
+            </script>
+
+<td>
+    <p id="E1"></p>
+    <script>
+        document.getElementById("E1").innerHTML =
+        Math.floor(Math.random()* (85-81))+81;
+    </script>
+</td>
+
+<td>
+    <p id="E2"></p>
+    <script>
+        document.getElementById("E2").innerHTML =
+        Math.floor(Math.random()* (93-90))+90;
+    </script>
+</td>
+<tr>
+    <tr>
+            </td>
+    <td>
+        <li>FDX</li>
+    </td>
+
+   <td>
+   </td>
+
+    <td>
+        <li>EZY</li>
+        <li>EZY</li>
+        <li>TUI</li>
+        <li>EXS</li>
+        <li>PGS</li>
+        <li>BAW</li>
+    </td>
+
+    <td>
+    </td>
+
+    <td>
+        
+    </td>
+
+    <td>
+    </td>
+
+    <td>
+    </td>
+
+    <td>
+    </td>
+    <td>
+        <li>RYR</li>
+    </td>
+
+    <td>
+    </td>
+
+    <td>
+        <li>RYR</li>
+    </td>
+
+   <td>
+    </td>
+
+</table>
+
+</body>
+</html>
+

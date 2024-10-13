@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<link rel = "stylesheet" href="mystyle.css">
+	<title> BULK ATC MASTOR</title> 
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Home</h2>
+
+</tbody>
+
+</table>
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Flightnumber</th>
+        <th>Departure</th>
+        <th>Arrival</th>
+		<th>Status</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+							<td>${data[i].flightnumber}</td>
+							<td>${data[i].DepartureId}</td>
+							<td>${data[i].ArrivalId}</td>
+							<td>${data[i].Status}</td>
+					  </tr>`
+			table.innerHTML += row
+
+
+		}
+	}
+
+</script>
+</table>
+</body>
+</html>
+

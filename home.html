@@ -37,17 +37,26 @@
 
     </h1>
 
+<style>
+button {
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+}
+</style>
+
 <!--QRA Button-->
 <button style="background-color:red"
 <button onclick="window.location.href = 'QRA.html';">QRA</button>
 
 <!--EMERGENCY Button-->
 <button style="background-color:red"
-<button onclick="window.location.href = '';">EMERGENCY</button>
+<button onclick="window.location.href = 'Emergency.html';">EMERGENCY</button>
 
-<!--EMERGENCY Button-->
+<!--GO AROUND ALARM-->
+<audio id="sound12" src="Sounds/go around alarm.mp3".mp3" preload="auto"></audio>
 <button style="background-color:orange"
-<button onclick="window.location.href = 'go around.html';">GO AROUND ALARM</button>
+<button onclick="document.getElementById('sound12').play();">GO AROUND ALARM</button>
+</audio>
 
 <!--Main Menu-->
 <section>
@@ -56,15 +65,20 @@
         <li><a href="Home.html"> Home </a></li>
         <li><a href="Webeye.html"> Webeye </a></li>
         <li><a href="https://drive.google.com/file/d/1gin-NOGFjaqd7YPV-GnSY3qlMoKgo0v2/view" target="_blank"> XU Quickview </a></li>
+        <li><a href="https://drive.google.com/file/d/1gCyWSw5nzDt92JvS6jGle4XgxT4AQPIC/view" target="_blank"> XU Military Quickview </a></li>
         <li><a href="https://wiki.ivao.aero/en/home/divisions/xu" target="_blank"> XU Knowledge Base </a></li>
         <li><a href="APSC.html"> Pressure Settings </a></li>
         <li><a href="CAA Seperation.html"> CAA Seperation </a></li>
         <li><a href="RECAT-EU Seperation.html"> RECAT-EU Seperation </a></li>
+        <li><a href="VFR Minima.html"> VFR Minima </a></li>
         <li><a href="Special Squawks.html"> Special Squawks </a></li>
+        <li><a href="Listening Squawks.html"> Listening Squawks </a></li>
         <li><a href="Soundboard.html"> Soundboard </a></li>
         <li><a href="Stand Assignment CAA.html"> Stand Assignment CAA </a></li>
         <li><a href="Stand Assignment ICAO.html"> Stand Assignment ICAO </a></li>
         <li><a href="Airport Search.html"> Airport search </a></li>
+        <li><a href="Military.html"> Military </a></li>
+        <a href="Files/SFC-195.pdf">Surface to 195 Chart</a>
 
         <h3>London Control South</h3>
         <li><a href="TTS STARS.html"> South STARS </a></li>
@@ -76,8 +90,9 @@
         <li><a href="TTW Agreements.html"> West Agreements </a></li>
         <li><a href="TTW External Agreements.html"> West External Agreements </a></li>
 
-        <h3>London Control North *WIP*</h3>
+        <h3>London Control North</h3>
         <li><a href="TTN STARS.html"> North STARS </a></li>
+        <li><a href="TTN Agreements.html"> North Agreements </a></li>
         <li><a href=""> North External Agreements </a></li>
 
         <h3>Scottish Control *WIP*</h3>
@@ -86,9 +101,16 @@
         <li><a href=""> Scottish External Agreements </a></li>
 
         <h3>Flight Information Services</h3>
-        <li><a href="Farnborough LARS.html"> Farnborough LARS </a></li>
+        <li><a href="London Info.html"> London Information</a></li>
+        <li><a href="Farnborough LARS.html"> Farnborough LARS</a></li>
+        <li><a href="AGCS.html"> AGCS/FISO </a></li>
+
+
     </ul>
 </nav>
 </body>
+
+<body>
+
 </html>
 

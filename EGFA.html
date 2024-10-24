@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Farnborough LARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+
+<!--------------------------------------------------------------------------------------------->
+<h2> EGFA West Wales Aberporth </h2>
+<!--------------------------------------------------------------------------------------------->
+
+<label for="Runway in use">Runway in use:</label>
+<select id="Runway in use" name="Runway in use">
+  <option value="07 RH">07 RH</option>
+  <option value="25 LH">25 LH</option>
+  <option value="04 RH">04 RH</option>
+  <option value="22 LH">22 LH</option>
+</select>
+
+<p>QFE=QNH-14</p1>
+
+<div class="form-group col-lg-6">
+    <label for="exampleInputText">QNH</label>
+    <input type="text" name="totalval" class="form-control" id="totalval" onchange="updateDue()">
+</div>
+<div class="form-group col-lg-6">
+    <label for="exampleInputText">QNH-QFE</label>
+    <input type="text" name="inideposit" class="form-control" id="inideposit" onchange="updateDue()">
+</div>
+<div class="form-group col-lg-6">
+    <label for="exampleInputText">QFE</label>
+    <input type="text" name="remainingval" class="form-control" id="remainingval">
+</div>
+
+<script>
+function updateDue() {
+
+    var total = parseInt(document.getElementById("totalval").value);
+    var val2 = parseInt(document.getElementById("inideposit").value);
+
+    // to make sure that they are numbers
+    if (!total) { total = 0; }
+    if (!val2) { val2 = 0; }
+
+    var ansD = document.getElementById("remainingval");
+    ansD.value = total - val2;
+}
+</script>
+
+<br>
+
+<img src="Files/EGFA.png" alt="EGLF LARS Map" width="900" height="600">
+
+
+
+
+
+
+
+</body>
+</html>

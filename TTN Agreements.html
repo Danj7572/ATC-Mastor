@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>London Control North Agreements</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <li><a href="Home.html"> Home </a></li>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGCC Manchester </h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>ASMIM/EKLAD</td>
+        <td>FL280 Level RAMOX</td>
+        <td>UL70/M145/M144</td>
+        <td>EIDW_CTR</td>
+        </tr>
+    <tr>
+        <td>ASMIM/EKLAD</td>
+        <td>FL260 Level LUSOD</td>
+        <td>M146</td>
+        <td>EGPX_L2_CTR</td>
+    </tr>
+    <tr>
+        <td>ASMIM/EKLAD</td>
+        <td>FL260 Level KELLY</td>
+        <td>L10</td>
+        <td>EGPX_L2_CTR</td>
+    </tr>
+    <tr>
+        <td>ASMIM/EKLAD</td>
+        <td>FL190</td>
+        <td>N862/P17</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>DESIG/SONEX</td>
+        <td>FL280 Level LISBO</td>
+        <td>UL603 LAMIX UT29 LIBSO</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+    <tr>
+        <td>DESIG/SONEX</td>
+        <td>FL280 to cross AMVEL FL250 or above</td>
+        <td>L603</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+    <tr>
+        <td>POL</td>
+        <td>FL270 level ARSAT/TILNI</td>
+        <td>UP17</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+    <tr>
+        <td>SANBA</td>
+        <td>FL190 Level 10nm before HON</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGGP Liverpool and EGNR Hawarden</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>BARTN</td>
+        <td>FL280 Level LIBSO</td>
+        <td>L603 LAMIX UT29 LIBSO</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+    <tr>
+        <td>HON/NANTI</td>
+        <td>FL190 10nm before HON</td>
+        <td></td>
+        <td>EGTT_S_CTR</td>
+    </tr>
+    <tr>
+        <td>NOKIN</td>
+        <td>FL190</td>
+        <td>N862</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+    <tr>
+        <td>REXAM</td>
+        <td>FL190</td>
+        <td>P17</td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGNM Leeds Bradford</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>LAMIX</td>
+        <td>FL280 to cross AMVEL FL250 or above</td>
+        <td>L603</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+    <tr>
+        <td>NELSA/POL</td>
+        <td>FL200 Level KARNO</td>
+        <td></td>
+        <td>EGTT_W_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGNX East Midlands</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>POL</td>
+        <td>FL280 level ARSAT</td>
+        <td>UP17 DIGBI P15</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+    <tr>
+        <td>TNT</td>
+        <td>FL280 Level LIBSO</td>
+        <td>LIBSO</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGBB Birmingham - EGTL_NW_CTR</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>LUVUM</td>
+        <td>FL280 Level ARSAT/TILNI</td>
+        <td>UP17/UP18</td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+    <tr>
+        <td>LUVUM</td>
+        <td>FL280 Level LIBSO</td>
+        <td></td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGNT Newcastle - EGPX_DX_CTR</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>SID</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>ETSES</td>
+        <td>FL150</td>
+        <td>UP17/UP18</td>
+        <td>EGPX_M_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGNS Isle of Man - EGPX_L2_CTR</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>STAR</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>M146</td>
+        <td>FL200 Level PENIL/DIGMA</td>
+        <td>EGNS</td>
+        <td>EGPX_L2_CTR</td>
+    </tr>
+</table>
+
+    </html>

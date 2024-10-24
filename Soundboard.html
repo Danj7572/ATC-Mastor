@@ -43,54 +43,131 @@
 </ul>
 <!----Add below this line---->
 
-<h3>Aviavox (3 tone)</h3>
-<audio controls>
-    <source src="Aviavox 3 tone.mp3" />
+<br>
+
+<p1>Aircraft Departure Sounds</p1><br>
+
+<audio id="sound0" src="Sounds/Medium-Heavy.wav".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound0').play();">Medium Heavy</button>
 </audio>
 
-<h3>Aviavox (2 tone)</h3>
-<audio controls>
-    <source src="Aviavox 2 tone.mp3" />
+<audio id="sound1" src="Sounds/Turboprop.wav".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound1').play();">Turboprop</button>
 </audio>
 
-<h3>Aena</h3>
-<audio controls>
-    <source src="Aena.wav" />
+<audio id="sound2" src="Sounds/Light prop.wav".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound2').play();">Light prop</button>
 </audio>
 
-<h3>Chime 1</h3>
-<audio controls>
-    <source src="Chime 1.wav" />
+<br>
+
+<p1>Airport Announcement tones</p1><br>
+
+<audio id="sound5" src="Sounds/Aviavox 3 tone.mp3".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound5').play();">Aviavox 3 tone</button>
 </audio>
 
-<h3>Chime 2</h3>
-<audio controls>
-    <source src="Chime 2.wav" />
+<audio id="sound6" src="Sounds/Aviavox 2 tone.mp3".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound6').play();">Aviavox 2 tone</button>
 </audio>
 
-<h3>Chime 3</h3>
-<audio controls>
-    <source src="Chime 3.wav" />
+<audio id="sound7" src="Sounds/Aena.wav".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound7').play();">Aena</button>
 </audio>
 
-<h3>Medium/Heavy</h3>
-<audio controls>
-    <source src="Medium-Heavy.wav" />
+<audio id="sound8" src="Sounds/Chime 1.wav".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound8').play();">Chime 1</button>
 </audio>
 
-<h3>Turboprop</h3>
-<audio controls>
-    <source src="Turboprop.wav" />
+<audio id="sound9" src="Sounds/Chime 2.wav".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound9').play();">Chime 2</button>
 </audio>
 
-<h3>Light prop</h3>
-<audio controls>
-    <source src="Light prop.wav" />
+<audio id="sound10" src="Sounds/Chime 3.wav".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound10').play();">Chime 3</button>
 </audio>
 
-<h3>Olay</h3>
-<audio controls>
-    <source src="Olay.wav" />
+<br>
+
+<p1>UK Police Seupra Radio</p1><br>
+<audio id="sound3" src="Sounds/Sepura on.mp3".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound3').play();">UK Police Sepura On</button>
 </audio>
-        </body>
+
+  <audio id="sound4" src="Sounds/Sepura off.mp3".mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound4').play();">UK Police Sepura Off</button>
+</audio>
+
+<br>
+
+<p1>Misc</p1><br>
+
+<audio id="sound11" src="Sounds/Olay.wav".mp3" preload="auto"></audio>
+<button onclick="document.getElementById('sound11').play();">Olay!</button>
+</audio>
+
+<audio id="sound13" src="Sounds/Metal pipe falling.mp3".mp3" preload="auto"></audio>
+<button onclick="document.getElementById('sound13').play();">Metal Pipe Falling</button>
+</audio>
+
+<audio id="sound14" src="Sounds/Cabin attend.mp3".mp3" preload="auto"></audio>
+<button onclick="document.getElementById('sound14').play();">cabin attend</button>
+</audio>
+
+<h3>Baggage Belt</h3>
+<audio controls>
+    <source src="Sounds/baggage belt 2.wav" />
+</audio>
+
+<h3>Terminal sounds</h3>
+<audio controls>
+    <source src="Sounds/EGLL T5.mp3" />
+</audio>
+
+<h3>Apollo Alarm</h3>
+<audio controls>
+    <source src="Sounds/Apollo 1.wav" />
+</audio>
+
+<!---TEST------------------------------------------------------>
+
+<audio id="sound">
+    <source src="Sounds/mic click.mp3">
+  </audio>
+  
+  <p><strong>Press <code>CTRL</code> to play the sound.</strong> The longer you hold the key pressed, the louder the sound is gonna be!</p>
+  
+  <div id="output"></div>
+
+<script>
+var pressed = {},
+    audio = document.getElementById('sound'),
+    output = document.getElementById('output'),
+    maxValue = 2,
+    duration,
+    volume;
+
+document.onkeydown = function (e) {
+  if (pressed[e.which]) return;
+  pressed[e.which] = e.timeStamp;
+  audio.play();
+};
+
+document.onkeyup = function (e) {
+  if (!pressed[e.which]) return;
+  
+  // 86 = V
+  if (e.keyCode === 17) {
+
+    
+    pressed[e.which] = 0;
+    
+
+    return false;
+  }
+  
+};
+
+</script>
+</body>
 </html>

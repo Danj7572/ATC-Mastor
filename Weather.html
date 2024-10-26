@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Webeye</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <button type="button"><a href="Home.html">Home</a></button>
+    <button type="button"><a href="https://www.wxcharts.com/?panel=default&model=gfs,gfs,gfs,gfs&region=nweurope&chart=overview,850temp,wind10mkph,snowdepth&run=06&step=003&plottype=10&lat=51.500&lon=-0.250&skewtstep=0" target="_blank">WX Charts</a></button>
+    <button type="button"><a href="https://www.windy.com/?53.270,-2.495,5,i:pressure" target="_blank">Windy</a></button>
+</ul>
+
+<embed src="https://view.eumetsat.int/productviewer?v=default" style="width:800px; height: 600px;">
+
+</body>
+
+</html>

@@ -79,8 +79,12 @@ li {
 }
 
 button {
+    width: 180px;
+    Height: 80px;
   color: rgb(0, 0, 0);
-  padding: 15px 32px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
 }
 
 

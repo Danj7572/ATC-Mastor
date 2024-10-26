@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<link rel = "stylesheet" href="mystyle.css">
+	<title> BULK ATC MASTOR</title> 
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Home</h2>
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+    </h1>
+
+    <ul>
+        <button type="button"><a href="Home.html">Home</a></button>
+    </ul>
+
+        <button type="button"><a href="TTS STARS.html">South STARS</a></button>
+        <button type="button"><a href="TTS Agreements.html">South Agreements</a></button>
+        <button type="button"><a href="TTS External Agreements.html">South External</a></button>     
+    <br>
+        <button type="button"><a href="TTW STARS.html">West STARS</a></button> 
+        <button type="button"><a href="TTW Agreements.html">West Agreements</a></button>
+        <button type="button"><a href="TTW External Agreements.html">West External</a></button>
+    <br>
+        <button type="button"><a href="TTN STARS.html">North STARS</a></button>
+        <button type="button"><a href="TTN Agreements.html">North Agreements</a></button>
+        <button type="button"><a href="TTN External Agreements.html">North External</a></button>
+    <br>
+         <button type="button"><a href="PX STARS.html">Scottish STARS</a></button> 
+         <button type="button" disabled><a href="PX Agreements.html">Scottish Agreements</a></button>
+         <button type="button" disabled ><a href="PX External Agreements.html">Scottish External</a></button>
+    <br>    
+        <button type="button" disabled><a href="EISN STARS.html">Shannon STARS</a></button>
+        <button type="button" disabled><a href="EISN Agreements.html">Shannon Agreements</a></button>
+        <button type="button" disabled><a href="EISN External Agreements.html">Shannon External</a></button>   
+</body>
+</html>
+

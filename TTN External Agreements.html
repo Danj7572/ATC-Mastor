@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>London Control North External Agreements</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <button type="button"><a href="Area Control.html">Back to Area Control</a></button>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2>EHAA Amsterdam</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>L603</td>
+        <td>FL250 Level DIBAL/20nm before LAMSO</td>
+        <td>Amsterdam EHAM/EH/KD/LE/RD/VB/YB/WO/VK/GR/MZ/SE/BD/DP</td>
+        <td>EHAA_CTR</td>
+        </tr>
+</table>
+
+<!--------------------------------------------------------------------------------------------->
+<h2>To EGPX_M_CTR / EIDW Dublin Control</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>M144</td>
+        <td>FL290</td>
+        <td></td>
+        <td>EGPX_M_CTR</td>
+    </tr>
+    <tr>
+        <td>M144</td>
+        <td>Dscending FL160</td>
+        <td>FL240 or below by BAGSO</td>
+        <td>EIDW_CTR</td>
+        </tr>
+    <tr>
+        <td>M145</td>
+        <td>Descending FL180</td>
+        <td>FL240 or below by BAGSO</td>
+        <td>EIDW_CTR</td>
+    </tr>
+</table>
+
+<!--------------------------------------------------------------------------------------------->
+<h2>From EGPX_M_CTR / EIDW Dublin Control</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>BOFUM/LIFFY/ENDEQ/DEXEN</td>
+        <td>FL230</td>
+        <td></td>
+        <td>EGPX_M_CTR</td>
+    </tr>
+    <tr>
+        <td>BOFUM/LIFFY/ENDEQ/DEXEN</td>
+        <td>FL280 level DONAX-BAGIT</td>
+        <td></td>
+        <td>EGTT_N_CTR</td>
+    </tr>
+</table>
+</body>
+</html>

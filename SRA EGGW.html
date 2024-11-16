@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1>BULK ATC MASTOR Version XIV MMXXIV </h1>
+    <h2>London Control North STARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <button type="Button"><a href="SRA.html">Back to SRA</a></button>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGGW London Luton </h2>
+<!--------------------------------------------------------------------------------------------->
+
+<h3>Runway 07</h3>
+<P>OCA/OCH 990 (475)</P>
+<table>
+    <tr>
+        <th>NM</th>
+        <th>ALT/HGT</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>5.0</td>
+        <td>2000 (1485)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.0</td>
+        <td>1700 (1185)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3.0 (SDF)</td>
+        <td>1410 (895)</td>
+        <td></td>
+    </td>
+    <tr>
+        <td>2.0</td>
+        <td>1110 (595)</td>
+        <td></td>
+    </tr>
+</Table>
+    
+    <h3>Runway 25</h3>
+    <P>OCA/OCH 940 (432)</P>
+
+    <table>
+    <tr>
+        <th>NM</th>
+        <th>ALT/HGT</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>7.0</td>
+        <td>2780 (2272)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>6.0</td>
+        <td>2460 (1952)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5.0</td>
+        <td>2130 (1622)</td>
+        <td></td>
+    <tr>
+        <td>4.0</td>
+        <td>1810 (1302)</td>
+        <td></td>
+    <tr>
+        <td>3.0</td>
+        <td>1480 (972)</td>
+        <td></td>
+    <tr>
+        <td>2.0</td>
+        <td>1160 (652)</td>
+        <td></td>
+    </td>
+    </tr>
+</Table>
+
+
+</html>

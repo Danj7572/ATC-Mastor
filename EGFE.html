@@ -8,7 +8,6 @@
 
 <body>
     <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
-    <h2>Farnborough LARS</h2>
 
     <h1>
         <body onload="startTime()">
@@ -39,60 +38,38 @@
 </body>
 
 <ul>
-    <li><a href="Home.html"> Home </a></li>
-</ul>
+    <button type="button"><a href="AGCS.html">Back</a></button>
+  </ul>
 
 <!--------------------------------------------------------------------------------------------->
 <h2> EGFE Haverfordwest </h2>
 <!--------------------------------------------------------------------------------------------->
 
-<label for="Runway in use">Runway in use:</label>
-<select id="Runway in use" name="Runway in use">
-  <option value="09 LH">09 LH</option>
-  <option value="27 LH">27 LH</option>
-  <option value="03 LH">03 LH</option>
-  <option value="21 LH">21 LH</option>
-</select>
+<img src="Files/EGFE.png" alt="EGFE" width="1000" height="700">
 
-<p>QFE=QNH-5</p1>
+<table>
+        <tr>
+            <th>Runway</th>
+            <th>Circuit</th>
+        </tr>
+        <tr>
+            <td>09</td>
+            <td>LH</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>LH</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>LH</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>LH</td>
+        </tr>
+    </table>
 
-<div class="form-group col-lg-6">
-    <label for="exampleInputText">QNH</label>
-    <input type="text" name="totalval" class="form-control" id="totalval" onchange="updateDue()">
-</div>
-<div class="form-group col-lg-6">
-    <label for="exampleInputText">QNH-QFE</label>
-    <input type="text" name="inideposit" class="form-control" id="inideposit" onchange="updateDue()">
-</div>
-<div class="form-group col-lg-6">
-    <label for="exampleInputText">QFE</label>
-    <input type="text" name="remainingval" class="form-control" id="remainingval">
-</div>
-
-<script>
-function updateDue() {
-
-    var total = parseInt(document.getElementById("totalval").value);
-    var val2 = parseInt(document.getElementById("inideposit").value);
-
-    // to make sure that they are numbers
-    if (!total) { total = 0; }
-    if (!val2) { val2 = 0; }
-
-    var ansD = document.getElementById("remainingval");
-    ansD.value = total - val2;
-}
-</script>
-
-<br>
-
-<img src="Files/EGFE.png" alt="EGLF LARS Map" width="900" height="600">
-
-
-
-
-
-
-
+    <p>QFE=QNH-5</p1>
 </body>
 </html>

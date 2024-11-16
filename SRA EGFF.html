@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1>BULK ATC MASTOR Version XIV MMXXIV </h1>
+    <h2>London Control North STARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <button type="Button"><a href="SRA.html">Back to SRA</a></button>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2> EGFF Cardiff </h2>
+<!--------------------------------------------------------------------------------------------->
+
+<h3>Runway 12</h3>
+<P>OCA/OCH 770 (595)</P>
+<table>
+    <tr>
+        <th>NM</th>
+        <th>ALT/HGT</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>5.0</td>
+        <td>1800 (1595)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.0</td>
+        <td>1480 (1275)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3.0</td>
+        <td>1160 (955)</td>
+        <td></td>
+    </td>
+    <tr>
+        <td>2.0</td>
+        <td>840 (635)</td>
+        <td></td>
+    </tr>
+</Table>
+    
+    <h3>Runway 30</h3>
+    <P>OCA/OCH 770 (557)</P>
+
+    <table>
+    <tr>
+        <th>NM</th>
+        <th>ALT/HGT</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>5.0</td>
+        <td>1800 (1587)</td>
+        <td></td>
+    <tr>
+        <td>4.0</td>
+        <td>1480 (1267)</td>
+        <td></td>
+    <tr>
+        <td>3.0</td>
+        <td>1170 (957)</td>
+        <td></td>
+    <tr>
+        <td>2.0</td>
+        <td>850 (637)</td>
+        <td></td>
+    </td>
+    </tr>
+</Table>
+
+
+</html>

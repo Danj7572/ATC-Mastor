@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1>BULK ATC MASTOR Version XIV MMXXIV </h1>
+    <h2>London Control North STARS</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <button type="Button"><a href="SRA.html">Back to SRA</a></button>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2> LXGB Gibraltar </h2>
+<!--------------------------------------------------------------------------------------------->
+
+<h3>Runway 09/27</h3>
+<P>Procedure Minimum Descent Alt/Height 920</P>
+<table>
+    <tr>
+        <th>NM</th>
+        <th>ALT/HGT</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>+10</td>
+        <td>2500</td>
+        <td>Notify TWR of SRA</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>2500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>9.0</td>
+        <td>2500</td>
+        <td></td>
+    </td>
+    <tr>
+        <td>8.5</td>
+        <td>2500</td>
+        <td>Begin Descent NOW to maintain a 3 degree glide path</td>
+    </tr>
+    <tr>
+        <td>8.0</td>
+        <td>2400</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>7.0</td>
+        <td>2100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>6.0</td>
+        <td>1800</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5.0</td>
+        <td>1500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.5</td>
+        <td></td>
+        <td>Check gear down, Acknowledge</td>
+    </tr>
+    <tr>
+        <td>4.0</td>
+        <td>1200</td>
+        <td>Request landing clearance from TWR, Issue landing clearance</td>
+    </tr>
+    <tr>
+        <td>3.5</td>
+        <td></td>
+        <td>Approaching point Y/X VDP. Are you visual with the Runway?</td>
+    </tr>
+    <tr>
+        <td>3.0</td>
+        <td></td>
+        <td>Approach completed. After landing contact Tower 131.200, Out</td>
+    </tr>
+</Table>
+
+
+</html>

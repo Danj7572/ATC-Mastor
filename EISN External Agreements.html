@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> BULK ATC MASTOR</title>
+</head>
+
+<body>
+    <h1 style="background-color:#FFFF00;">BULK ATC MASTOR Version XIV MMXXIV</h1>
+    <h2>Shannon Control External Agreements</h2>
+
+    <h1>
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+
+            <script>
+
+                function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+
+    </h1>
+
+</body>
+
+<ul>
+    <button type="button"><a href="Area Control.html">Back to Area Control</a></button>
+</ul>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGTT W CTR - London Control West</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>L18</td>
+        <td>FL200 Level BADSI</td>
+        <td></td>
+        <td>EIDW_CTR</td>
+        </tr>
+    <tr>
+        <td>M17</td>
+        <td>FL240 Level LEMGU</td>
+        <td></td>
+        <td>EIDW_CTR</td>
+    </tr>
+    <tr>
+        <td>Q63</td>
+        <td>FL240 Level TIGBA</td>
+        <td></td>
+        <td>EIDW_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EGTT N CTR - London Control North</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>M144</td>
+        <td>Dscending FL160</td>
+        <td>FL240 or below by BAGSO</td>
+        <td>EIDW_CTR</td>
+        </tr>
+    <tr>
+        <td>M145</td>
+        <td>Descending FL180</td>
+        <td>FL240 or below by BAGSO</td>
+        <td>EIDW_CTR</td>
+    </tr>
+</table>
+<!--------------------------------------------------------------------------------------------->
+<h2>EISN - Shannon Control</h2>
+<!--------------------------------------------------------------------------------------------->
+<table>
+    <tr>
+        <th>Via</th>
+        <th>Standing Agreement</th>
+        <th>Notes</th>
+        <th>To</th>
+    </tr>
+    <tr>
+        <td>ENJEX</td>
+        <td>MAX FL340</td>
+        <td>EICK Arrivals</td>
+        <td>EISN_CTR</td>
+    </tr>
+    <tr>
+        <td>BANBA</td>
+        <td>Descending FL360</td>
+        <td>EI Arrivals, except Dublin Group EICK, EIWF</td>
+        <td>EISN_CTR</td>
+    </tr>
+</table>
+
+</html>
